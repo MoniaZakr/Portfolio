@@ -1,0 +1,228 @@
+:root {
+    --green: #38ccae;
+    --dark: #1b1b1b;
+    --white: rgb(252, 249, 249)
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    background: var(--green);
+    background: linear-gradient(to right top, var(--dark), var(--green));
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.side_container {
+    display: grid;
+    grid-template-rows: 28vh 25vh auto;
+    height: 80vh;
+    width: 25%;
+    margin: auto;
+    border-radius: 5%;
+    background: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 1rem 2rem rgba(236, 230, 230, 0.3);
+}
+
+div .img {
+    width: 40%;
+    justify-self: center;
+    grid-template-columns: 2/3;
+    text-align: center;
+}
+
+.my_photo {
+    height: 80%;
+    margin-top: 20px;
+    border: 2px solid rgba(229, 243, 235, 0.5);
+    border-radius: 50%;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.button {
+    height: 60%;
+    padding: 5px;
+    border: 2px solid rgba(229, 243, 235, 0.5);
+    outline: none;
+    background: linear-gradient(to right top, var(--green), rgba(255, 255, 255, 0.6));
+    color:rgb(252, 249, 249);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .35s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.5);
+    border: 2px solid var(--green);
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+}
+
+.download {
+    position: relative;
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.cv {
+    display: block;
+    text-transform: uppercase;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    width: 45%;
+    height: 45%;
+    font-size: 1.2rem;
+    margin: auto;
+    text-decoration: none;
+}
+
+.cv:hover ~ .fa-regular {
+    display: none;
+}
+
+.fas {
+    position: absolute;
+    top: 15%;
+    right: 61px;
+    font-size: large;
+    color: var(--green);
+    animation: rightArrow 0.9s infinite;
+}
+
+.fa-arrow-right-long {
+    position: absolute;
+    top: 15%;
+    right: 77%;
+    font-size: large;
+    animation: leftArrow 0.9s infinite;
+}
+
+.cv:hover + .fa-arrow-right-long {
+    display: none;
+}
+
+
+@keyframes rightArrow {
+    from {transform: translateX(0)}
+    to {transform: translateX(-10px)}
+}
+
+@keyframes leftArrow {
+    from {transform: translateX(0)}
+    to {transform: translateX(10px)}
+}
+
+.main_container {
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    border-radius: 5%;
+    background: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 1rem 2rem rgba(236, 230, 230, 0.3);
+}
+
+.home_container {
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    border-radius: 5%;
+    background: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 1rem 2rem rgba(236, 230, 230, 0.3);
+}
+
+
+
+.text {
+    height: 60%;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.header_text {
+    width: 100%;
+    letter-spacing: 0.8rem;
+    margin: 55px auto;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+}
+
+.name {
+    letter-spacing: 0.2rem;
+    margin: 20px ;
+}
+
+h2 span {
+    font-size: larger;
+    animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.social_media {
+    width: 100%;
+    height: 20%;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+.fa-brands {
+    margin: 10px;
+    color: var(--green);
+    background-color: var(--white);
+    border: 1px solid rgba(229, 243, 235, 0.5);
+    transition: .4s;
+}
+
+.fa-brands:hover {
+    transform: scale(1.6);
+    border: 2px solid var(--green);
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+}
