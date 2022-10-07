@@ -25,6 +25,7 @@ body {
     grid-template-rows: 28vh 25vh auto;
     height: 80vh;
     width: 25%;
+    text-align: center;
     margin: auto;
     border-radius: 5%;
     background: rgba(0, 0, 0, 0.75);
@@ -151,6 +152,21 @@ div .img {
 }
 
 .about_container {
+    display: none;
+    height: 80vh;
+    width: 50%;
+    margin: auto;
+    border-radius: 5%;
+    background: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 1rem 2rem rgba(236, 230, 230, 0.3);
+} 
+
+.education_container {
+    display: flex;
+    justify-content: space-evenly;
     height: 80vh;
     width: 50%;
     margin: auto;
@@ -161,6 +177,87 @@ div .img {
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 1rem 2rem rgba(236, 230, 230, 0.3);
 }
+
+.education {
+    position: relative;
+}
+
+.section {
+    margin: 25px 5px;
+    /* background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;  */
+}
+
+h3.header {
+    text-align: center;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase; 
+}
+
+/* ul.list {
+    list-style: square;
+    color: black;
+} */
+
+
+
+li.school, li.course {
+    position: relative;
+    margin: 30px;
+    font-weight: bolder;
+    background: linear-gradient(90deg, var(--green), var(--white));
+    color: transparent;
+    -webkit-background-clip: text; 
+}
+
+li.course::before, li.school::before  {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: var(--green);
+    top: 7px;
+    left: -20px;
+}
+
+
+p.degree, p.organizer {
+    font-weight: normal;
+    color: var(--white);
+} 
+
+img.picture {
+    height: 50%;
+    position: absolute;
+    left: 80px;
+}
+
+.wave {
+    animation-name: wave-animation; 
+    animation-duration: 2.5s;
+    transform-origin: 70% 70%; 
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
 
 .wrapper_container {
     width: 95%;
@@ -173,9 +270,20 @@ div .img {
     text-align: center;
     text-transform: uppercase;
 }
+
+strong {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase; 
+}
+
 .about_header {
     text-align: justify; 
     margin: 10px 45px;
+   
 }
 
 .about_text {
