@@ -367,7 +367,7 @@ h2 span {
 .skills__header {
     width: 100%;
     margin-top: 35px;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
     text-align: center;
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
@@ -451,6 +451,9 @@ h2 span {
 }
 
 .projects__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     height: 80vh;
     width: 50%;
     margin: auto;
@@ -473,4 +476,152 @@ h2 span {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 1rem 2rem rgba(236, 230, 230, 0.3); 
+}
+
+.projects__header {
+    width: 100%;
+    margin-top: 35px;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase; 
+}
+
+.projects_wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap:wrap;
+    height: 220px;
+    width: 40%; 
+}
+
+.img__wrapper {
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: perspective(1000px)
+    /* text-align: center; */
+}
+
+.projects__img {
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--green);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 1rem 2rem rgba(236, 230, 230, 0.3); 
+    opacity: 0.7;
+}
+
+.projects__img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+.projects__button {
+     position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    padding: 3px;
+    background-color: rgb(31, 38, 31);
+    color: var(--green);
+    border: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+    transform: translateZ(20px);
+    transition:0.3s ;
+   
+   
+}
+
+.projects__button:hover {
+    transform: scale(1.1);
+}
+
+.projects__button:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    top: -3px;
+    left: -15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform:rotate(20deg);
+    transition: 0.3s;
+}
+
+.projects__button:hover:after {
+    transform: translateX(100px) rotate(20deg);
+}
+
+.popup__wrapper {
+    display: none;
+    position: absolute;
+    bottom: -105%;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 10px;
+    font-size: small;
+}
+
+.popup__button {
+    position: absolute;
+    right: 5%;
+    display: block;
+    background-color: transparent; 
+    border: none;
+   /* transform: translateX(240px); */
+}
+
+.popup_title {
+    text-align: center;
+    margin: 5px;
+    color: var(--green);
+    /* background: linear-gradient(90deg, var(--green), var(--white));
+    color: transparent;
+    -webkit-background-clip: text;  */
+}
+
+.popup__description {
+    background: linear-gradient(90deg, var(--green), var(--white));
+    color: transparent;
+    -webkit-background-clip: text; 
+}
+
+.popup__info {
+    margin: 10px;
+   color: var(--green);
+}
+
+.popup__info--link {
+    display: inline-block;
+    font-size: larger;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.popup__info--link:hover {
+    transform: scale(1.1);
+}
+
+.social_media--projects {
+    align-self: flex-end;
+    font-size: small;
+    height: 5%;
+    margin-bottom: 15px;
 }
