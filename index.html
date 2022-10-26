@@ -137,12 +137,48 @@
                 <p class="popup__info">See the project here!!! <a class="popup__info popup__info--link" href="https://moniazakr.github.io/To-Do-List/"><i class="fa-solid fa-download"></i></a></p>
             </div>
         </div>.
-        <div class="social_media social_media--projects"> 
+        <div class="social_media social_media--projects">
             <a href="https://github.com/MoniaZakr"><i class="fa-brands fa-square-github"></i></a>
             <a href="https://www.linkedin.com/in/monika-zakrzewska-6b2667234/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </div>
-    <div class="contact__container"></div>
+    <div class="contact__container"> 
+        <h1 class="header__contact">Contact me</h1>
+        <div class="contact__icons">
+            <div class="icons__call">
+                <p class="contact__call">Call Me</p>
+                <a href="tel:731061558"><img src="photo/icons8-phone-48.png" alt="Phone" class="contact__img"></a>
+            </div>
+            <div class="icons__mail">
+                <p class="contact__mail">Email Me</p>
+                <a href="monikawiniar@gmail.com"><img src="photo/icons8-gmail-48.png" alt="Phone" class="contact__img"></a>
+                
+            </div>
+        </div>
+        <form action="https://formsubmit.io/send/monikawiniar@gmail.com" method="POST" class="contact__form">
+            <h3 class="form__header" >Send Me An Email</h3>
+            <div class="form__wrapper form__wrapper--1">
+                <input type="text" class="form__input" placeholder="" required  >
+                <label for="form__input">Name</label>
+            </div>
+            <div class="form__wrapper form__wrapper--1">
+                <input type="email" class="form__input" placeholder="" required >
+                <label for="form__input">Email</label>
+            </div>
+            <div class="form__wrapper form__wrapper--2">
+                <input type="text" class="form__input" placeholder="">
+                <label for="form__input">Subject</label>
+            </div>
+            <div class="form__wrapper form__wrapper--2">
+                <textarea name="form__input" class="form__input form__input--textarea " cols="25" rows="4" placeholder="" required></textarea>
+                 <label for="form__input">Massage</label>
+            </div>
+            <input type="submit" class="form__input form__input--submit" placeholder="Send Message">
+
+            <input name="_formsubmit_id" type="text" style="display:none">
+        </form>
+    </div>
+   
 
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script src="main.js"></script>
