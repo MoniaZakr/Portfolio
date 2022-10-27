@@ -204,15 +204,18 @@ body {
     font-size: larger;
     animation: blink 1.2s ease-in-out infinite;
     -webkit-animation: blink 1.5s ease-in-out infinite; 
-    -webkit-transition: all 1.2s ease-in-out;
+    /* -webkit-transition: all 1.2s ease-in-out;
     -moz-transition: all 1.2s ease-in-out;
     -o-transition: all 1.2s ease-in-out;
-    -ms-transition: all 1.2s ease-in-out;
+    -ms-transition: all 1.2s ease-in-out; */
 }
 
 @keyframes blink {
     50% {
         opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
