@@ -338,10 +338,15 @@ p.about_text:nth-child(9) {
 h2 span {
     font-size: larger;
     animation: blink 1.5s linear infinite;
+    -webkit-animation: blink 4s steps(40, start) infinite;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
 }
 
 @keyframes blink {
-    50% {
+    50% {git 
         opacity: 0;
     }
 }
