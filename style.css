@@ -21,7 +21,7 @@ body {
     overflow: hidden;
 }
 
-.side_container {
+.side__container {
     display: grid;
     grid-template-rows: 28vh 25vh auto;
     height: 80vh;
@@ -534,7 +534,7 @@ h2 span {
 
 .projects__img:hover {
     opacity: 1;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 
@@ -556,9 +556,9 @@ h2 span {
    
 }
 
-.projects__button:hover {
+/* .projects__button:hover {
     transform: scale(1.1);
-}
+} */
 
 .projects__button:after {
     content: "";
