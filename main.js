@@ -1,12 +1,12 @@
 const buttons = document.querySelectorAll(".button");
-const aboutSection = document.querySelector(".about_container");
-const homeSection = document.querySelector(".home_container");
-const educationSection = document.querySelector(".education_container");
-const skillsSection = document.querySelector(".skills__container");
-const projectsSection = document.querySelector(".projects__container");
-const contactSection = document.querySelector(".contact__container");
-const readMoreButton = document.querySelectorAll(".projects__button");
-const popups = document.querySelectorAll(".popup__wrapper"); 
+const aboutSection = document.querySelector(".about");
+const homeSection = document.querySelector(".home");
+const educationSection = document.querySelector(".education");
+const skillsSection = document.querySelector(".skills");
+const projectsSection = document.querySelector(".projects");
+const contactSection = document.querySelector(".contact");
+const readMoreButton = document.querySelectorAll(".projects__img__button");
+const popups = document.querySelectorAll(".projects__popup"); 
 const closeButton = document.querySelectorAll(".popup__button"); 
 
 
@@ -20,7 +20,7 @@ buttons.forEach(button => button.addEventListener("click", switched));
 function switched(e) {
     const btn = e.target;
     console.log(btn);
-    if(btn.classList.contains("home")) {
+    if(btn.classList.contains("menu__home")) {
         homeSection.style.display = "grid";
         aboutSection.style.display = "none";
         educationSection.style.display = "none";
@@ -28,7 +28,7 @@ function switched(e) {
         projectsSection.style.display = "none";
         contactSection.style.display = "none";
 
-    }else if(btn.classList.contains("about")) {
+    }else if(btn.classList.contains("menu__about")) {
         aboutSection.style.display = "block";
         homeSection.style.display = "none";
         educationSection.style.display = "none";
@@ -36,7 +36,7 @@ function switched(e) {
         projectsSection.style.display = "none";
         contactSection.style.display = "none";
 
-    }else if(btn.classList.contains("education")) {
+    }else if(btn.classList.contains("menu__education")) {
         educationSection.style.display = "flex";
         homeSection.style.display = "none";
         aboutSection.style.display = "none";
@@ -44,7 +44,7 @@ function switched(e) {
         projectsSection.style.display = "none";
         contactSection.style.display = "none";
 
-    }else if(btn.classList.contains("skills")) {
+    }else if(btn.classList.contains("menu__skills")) {
         skillsSection.style.display = "flex";
         homeSection.style.display = "none";
         aboutSection.style.display = "none";
@@ -53,7 +53,7 @@ function switched(e) {
         contactSection.style.display = "none";
 
 
-    }else if(btn.classList.contains("projects")) {
+    }else if(btn.classList.contains("menu__projects")) {
         projectsSection.style.display = "flex";
         homeSection.style.display = "none";
         aboutSection.style.display = "none";
@@ -61,7 +61,7 @@ function switched(e) {
         skillsSection.style.display = "none";
         contactSection.style.display = "none";
 
-    }else if(btn.classList.contains("contact")) {
+    }else if(btn.classList.contains("menu__contact")) {
         contactSection.style.display = "flex";
         homeSection.style.display = "none";
         aboutSection.style.display = "none";
@@ -71,7 +71,7 @@ function switched(e) {
     }
 }
 
-VanillaTilt.init(document.querySelectorAll(".img__wrapper"), {
+VanillaTilt.init(document.querySelectorAll(".projects__img__wrapper"), {
     max: 25,
     speed: 400
 });

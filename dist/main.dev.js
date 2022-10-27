@@ -1,14 +1,14 @@
 "use strict";
 
 var buttons = document.querySelectorAll(".button");
-var aboutSection = document.querySelector(".about_container");
-var homeSection = document.querySelector(".home_container");
-var educationSection = document.querySelector(".education_container");
-var skillsSection = document.querySelector(".skills__container");
-var projectsSection = document.querySelector(".projects__container");
-var contactSection = document.querySelector(".contact__container");
-var readMoreButton = document.querySelectorAll(".projects__button");
-var popups = document.querySelectorAll(".popup__wrapper");
+var aboutSection = document.querySelector(".about");
+var homeSection = document.querySelector(".home");
+var educationSection = document.querySelector(".education");
+var skillsSection = document.querySelector(".skills");
+var projectsSection = document.querySelector(".projects");
+var contactSection = document.querySelector(".contact");
+var readMoreButton = document.querySelectorAll(".projects__img__button");
+var popups = document.querySelectorAll(".projects__popup");
 var closeButton = document.querySelectorAll(".popup__button");
 buttons.forEach(function (button) {
   return button.addEventListener("click", switched);
@@ -18,42 +18,42 @@ function switched(e) {
   var btn = e.target;
   console.log(btn);
 
-  if (btn.classList.contains("home")) {
+  if (btn.classList.contains("menu__home")) {
     homeSection.style.display = "grid";
     aboutSection.style.display = "none";
     educationSection.style.display = "none";
     skillsSection.style.display = "none";
     projectsSection.style.display = "none";
     contactSection.style.display = "none";
-  } else if (btn.classList.contains("about")) {
+  } else if (btn.classList.contains("menu__about")) {
     aboutSection.style.display = "block";
     homeSection.style.display = "none";
     educationSection.style.display = "none";
     skillsSection.style.display = "none";
     projectsSection.style.display = "none";
     contactSection.style.display = "none";
-  } else if (btn.classList.contains("education")) {
+  } else if (btn.classList.contains("menu__education")) {
     educationSection.style.display = "flex";
     homeSection.style.display = "none";
     aboutSection.style.display = "none";
     skillsSection.style.display = "none";
     projectsSection.style.display = "none";
     contactSection.style.display = "none";
-  } else if (btn.classList.contains("skills")) {
+  } else if (btn.classList.contains("menu__skills")) {
     skillsSection.style.display = "flex";
     homeSection.style.display = "none";
     aboutSection.style.display = "none";
     educationSection.style.display = "none";
     projectsSection.style.display = "none";
     contactSection.style.display = "none";
-  } else if (btn.classList.contains("projects")) {
+  } else if (btn.classList.contains("menu__projects")) {
     projectsSection.style.display = "flex";
     homeSection.style.display = "none";
     aboutSection.style.display = "none";
     educationSection.style.display = "none";
     skillsSection.style.display = "none";
     contactSection.style.display = "none";
-  } else if (btn.classList.contains("contact")) {
+  } else if (btn.classList.contains("menu__contact")) {
     contactSection.style.display = "flex";
     homeSection.style.display = "none";
     aboutSection.style.display = "none";
@@ -63,7 +63,7 @@ function switched(e) {
   }
 }
 
-VanillaTilt.init(document.querySelectorAll(".img__wrapper"), {
+VanillaTilt.init(document.querySelectorAll(".projects__img__wrapper"), {
   max: 25,
   speed: 400
 });
