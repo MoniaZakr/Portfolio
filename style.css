@@ -202,8 +202,9 @@ body {
 
 .home__animation {
     font-size: larger;
-    animation: blink 1.2s ease-in-out infinite;
-    -webkit-animation: blink 1.5s ease-in-out infinite; 
+    animation: blink 1.2s ease-in-out infinite alternate;
+    opacity: 1;
+    /* -webkit-animation: blink 1.5s ease-in-out infinite;  */
     /* -webkit-transition: all 1.2s ease-in-out;
     -moz-transition: all 1.2s ease-in-out;
     -o-transition: all 1.2s ease-in-out;
