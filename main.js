@@ -8,9 +8,10 @@ const contactSection = document.querySelector(".contact");
 const readMoreButton = document.querySelectorAll(".projects__img__button");
 const popups = document.querySelectorAll(".projects__popup"); 
 const closeButton = document.querySelectorAll(".popup__button"); 
+const menu = document.querySelector(".menu");
+const closeMark = document.querySelectorAll(".menu__xmark");
 
-
-
+const x = window.matchMedia("(max-width: 810px)");
 
 
 
@@ -27,7 +28,7 @@ function switched(e) {
         skillsSection.style.display = "none";
         projectsSection.style.display = "none";
         contactSection.style.display = "none";
-
+        homeSectionMedia(x);
     }else if(btn.classList.contains("menu__about")) {
         aboutSection.style.display = "block";
         homeSection.style.display = "none";
@@ -35,6 +36,7 @@ function switched(e) {
         skillsSection.style.display = "none";
         projectsSection.style.display = "none";
         contactSection.style.display = "none";
+        aboutSectionMedia(x)
 
     }else if(btn.classList.contains("menu__education")) {
         educationSection.style.display = "flex";
@@ -43,7 +45,7 @@ function switched(e) {
         skillsSection.style.display = "none";
         projectsSection.style.display = "none";
         contactSection.style.display = "none";
-
+        educationSectionMedia(x)
     }else if(btn.classList.contains("menu__skills")) {
         skillsSection.style.display = "flex";
         homeSection.style.display = "none";
@@ -51,8 +53,7 @@ function switched(e) {
         educationSection.style.display = "none";
         projectsSection.style.display = "none";
         contactSection.style.display = "none";
-
-
+        skillsSectionMedia(x);
     }else if(btn.classList.contains("menu__projects")) {
         projectsSection.style.display = "flex";
         homeSection.style.display = "none";
@@ -60,7 +61,7 @@ function switched(e) {
         educationSection.style.display = "none";
         skillsSection.style.display = "none";
         contactSection.style.display = "none";
-
+        projectsSectionMedia(x);
     }else if(btn.classList.contains("menu__contact")) {
         contactSection.style.display = "flex";
         homeSection.style.display = "none";
@@ -68,8 +69,71 @@ function switched(e) {
         educationSection.style.display = "none";
         skillsSection.style.display = "none";
         projectsSection.style.display = "none";
+        contactSectionMedia(x)
     }
 }
+
+function homeSectionMedia(x) {
+    if (x.matches) {
+        homeSection.style.display = "block";
+        homeSection.style.height = "100%";
+        homeSection.style.width = "100%";
+        homeSection.style.borderRadius = "0";
+        menu.style.display = "none"; 
+    }
+}
+
+
+function aboutSectionMedia(x) {
+    if (x.matches) {
+        aboutSection.style.display = "block";
+        aboutSection.style.height = "100%";
+        aboutSection.style.width = "100%";
+        aboutSection.style.borderRadius = "0";
+        menu.style.display = "none"
+    }
+}
+
+function educationSectionMedia(x) {
+    if (x.matches) {
+        educationSection.style.display = "block";
+        educationSection.style.height = "100%";
+        educationSection.style.width = "100%";
+        educationSection.style.borderRadius = "0";
+        menu.style.display = "none"
+    }
+}
+
+function skillsSectionMedia(x) {
+    if (x.matches) {
+        skillsSection.style.display = "block";
+        skillsSection.style.height = "100%";
+        skillsSection.style.width = "100%";
+        skillsSection.style.borderRadius = "0";
+        menu.style.display = "none"
+    }
+}
+
+function projectsSectionMedia(x) {
+    if (x.matches) {
+        projectsSection.style.display = "block";
+        projectsSection.style.height = "100%";
+        projectsSection.style.width = "100%";
+        projectsSection.style.borderRadius = "0";
+        menu.style.display = "none"
+    }
+}
+
+function contactSectionMedia(x) {
+    if (x.matches) {
+        contactSection.style.display = "block";
+        contactSection.style.height = "100%";
+        contactSection.style.width = "100%";
+        contactSection.style.borderRadius = "0";
+        menu.style.display = "none"
+    }
+}
+
 
 VanillaTilt.init(document.querySelectorAll(".projects__img__wrapper"), {
     max: 25,
@@ -97,3 +161,18 @@ function popupClose(index) {
     popups[index].style.display = "none";
 }
 
+function closeWindow() {
+   
+    homeSection.style.display = "none";
+    aboutSection.style.display = "none";
+    educationSection.style.display = "none";
+    skillsSection.style.display = "none";
+    projectsSection.style.display = "none";
+    contactSection.style.display = "none";
+    menu.style.display = "grid";
+    
+
+    
+}
+
+closeMark.forEach(element => element.addEventListener("click", closeWindow));
