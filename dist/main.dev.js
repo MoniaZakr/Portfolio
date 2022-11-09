@@ -12,7 +12,8 @@ var popups = document.querySelectorAll(".projects__popup");
 var closeButton = document.querySelectorAll(".popup__button");
 var menu = document.querySelector(".menu");
 var closeMark = document.querySelectorAll(".menu__xmark");
-var x = window.matchMedia("(max-width: 810px)");
+var formInput = document.querySelectorAll(".contact__form__input");
+var x = window.matchMedia("(max-width: 812px)");
 buttons.forEach(function (button) {
   return button.addEventListener("click", switched);
 });
@@ -168,5 +169,8 @@ function closeWindow() {
 
 closeMark.forEach(function (element) {
   return element.addEventListener("click", closeWindow);
+});
+formInput.forEach(function (input, value) {
+  input.value = "";
 });
 //# sourceMappingURL=main.dev.js.map

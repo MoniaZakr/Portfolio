@@ -19,19 +19,19 @@
             <i class=" fas fa-regular fa-arrow-left-long"></i>
         </div>
         <navigation class="menu__nav">
-            <button class="button menu__home">home</button>
-            <button class="button menu__about">about me</button>
-            <button class="button menu__education">education</button>
-            <button class="button menu__skills">skills</button>
-            <button class="button menu__projects">my projects</button>
-            <button class="button menu__contact">contact</button>
+            <button class="button menu__home">Home</button>
+            <button class="button menu__about">About me</button>
+            <button class="button menu__education">Education</button>
+            <button class="button menu__skills">Skills</button>
+            <button class="button menu__projects">My Projects</button>
+            <button class="button menu__contact">Contact</button>
         </navigation>
     </div>
     <div class="home"> 
         <div class="menu__xmark">
             <i class="fa-sharp fa-solid fa-x"></i>
         </div>
-        <div class="home_text">
+        <div class="home__text">
             <h1 class="home__header">Hi there...</h1>
             <h2 class="home__header home__header--name">My name is <span class="home__animation">Monika</span></h2>
             <h3 class="home__header" >I'm a junior Frond-End Developer</h3></div>
@@ -73,7 +73,7 @@
         </section>
         <section class="education__section education__section--course">
             <h3 class="education__header">Courses</h3>
-            <ul class="education__education__list">
+            <ul class="education__list">
                 <li class="education__course">Web developer for beginners
                     <p class="education__organizer">- Udemy, "Samuraj Programowania"</p>
                 </li>
@@ -120,7 +120,8 @@
             <img src="photo/icons8-css3-48.png" class="skills__img skills__img--css"  alt="CSS">
             <img src="photo/icons8-git-48.png" class="skills__img skills__img--git"  alt="GIT">
             <img src="photo/icons8-sass-avatar-48.png" class="skills__img skills__img--sass"  alt="Sass">
-            <img src="photo/icons8-responsive-48.png" class="skills__img skills__img--redponsive"  alt="Responsive Design">
+            <img src="photo/icons8-responsive-48.png" class="skills__img skills__img--responsive"  alt="Responsive Design">
+            <img src="photo/icons8-adobe-photoshop-48.png" class="skills__img skills__img--photoshop"  alt="Photoshop">
         </div>
     </div>
     <div class="projects">
@@ -170,7 +171,6 @@
             <div class="contact__icons__mail">
                 <p class="contact__mail">Email Me</p>
                 <a href="monikawiniar@gmail.com"><img src="photo/icons8-gmail-48.png" alt="Phone" class="contact__img"></a>
-                
             </div>
         </div>
         <form action="https://formsubmit.io/send/monikawiniar@gmail.com" method="POST" class="contact__form">
@@ -189,11 +189,11 @@
             </div>
             <div class="contact__form__wrapper contact__form__wrapper--2">
                 <textarea name="form__input" class="contact__form__input contact__form__input--textarea " cols="25" rows="4" placeholder="" required></textarea>
-                 <label for="contact__form__input">Massage</label>
+                <label for="contact__form__input">Massage</label>
             </div>
-            <input type="submit" class="contact__form__input contact__form__input--submit" placeholder="Send Message">
+            <input type="submit" class="contact__form__input--submit">
 
-            <input name="_redirect" type="hidden" id="name" value="127.0.0.1:5500/redirect/index.html">
+            <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/redirect/index.html"> -->
 
             <input name="_formsubmit_id" type="text" style="display:none">
         </form>

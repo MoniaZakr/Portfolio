@@ -10,8 +10,9 @@ const popups = document.querySelectorAll(".projects__popup");
 const closeButton = document.querySelectorAll(".popup__button"); 
 const menu = document.querySelector(".menu");
 const closeMark = document.querySelectorAll(".menu__xmark");
+const formInput = document.querySelectorAll(".contact__form__input");
 
-const x = window.matchMedia("(max-width: 810px)");
+const x = window.matchMedia("(max-width: 812px)");
 
 
 
@@ -176,3 +177,8 @@ function closeWindow() {
 }
 
 closeMark.forEach(element => element.addEventListener("click", closeWindow));
+
+formInput.forEach((input, value) => {
+    input.value = "";
+
+})
