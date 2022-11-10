@@ -330,12 +330,11 @@ body {
     letter-spacing: 0.8rem;
     margin: 82px auto;
     text-align: center;
+    text-transform: uppercase;
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
-	-moz-background-clip: text;
 	-webkit-background-clip: text;
-	text-transform: uppercase;
 }
 
 .home__header--name {
@@ -401,7 +400,6 @@ body {
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
-	-moz-background-clip: text;
 	-webkit-background-clip: text;
 }
 
@@ -465,7 +463,6 @@ strong {
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
-	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	text-transform: uppercase; 
 }
@@ -570,10 +567,9 @@ strong {
     text-align: center;
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
+    text-transform: uppercase; 
 	color: transparent;
-	-moz-background-clip: text;
 	-webkit-background-clip: text;
-	text-transform: uppercase; 
 }
 
 @media only screen and (max-width: 812px) {
@@ -699,12 +695,11 @@ strong {
     margin-top: 35px;
     letter-spacing: 0.3rem;
     text-align: center;
+    text-transform: uppercase;
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
-	-moz-background-clip: text;
 	-webkit-background-clip: text;
-	text-transform: uppercase; 
 }
 
 @media only screen and (max-width: 414px) {
@@ -848,12 +843,11 @@ strong {
     margin: 35px;
     letter-spacing: 0.2rem;
     text-align: center;
+    text-transform: uppercase; 
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
-	-moz-background-clip: text;
 	-webkit-background-clip: text;
-	text-transform: uppercase; 
 }
 
 @media only screen and (max-width: 812px) {
@@ -1059,12 +1053,11 @@ strong {
     margin: 25px;
     letter-spacing: 0.2rem;
     text-align: center;
+    text-transform: uppercase; 
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    -webkit-background-clip: text;
 	background-size: cover;
-	color: transparent;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
-	text-transform: uppercase; 
+	color: transparent;	
 }
 
 @media only screen and (max-width: 812px) {
@@ -1277,6 +1270,3 @@ label {
        top: 0%;
     }
 }
-
-
-
