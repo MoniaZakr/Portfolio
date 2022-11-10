@@ -1220,7 +1220,7 @@ label {
     -o-transform: translateY(-50%);
     left: 15px;
     font-size: 0.9rem;
-    color:#2b6154;
+    color:rgb(7, 129, 99);
     -o-transition:0.2s ease all; 
     -webkit-transition:0.2s ease all;
     transition:0.2s ease all; 
@@ -1236,14 +1236,15 @@ label {
        top: 33%;
 }}
 
-.contact__form__input:focus+label {
+.contact__form__input:focus + label,
+.contact__form__input:valid + label {
     top:10%;
     left: 50%;
     margin-left: -15px;
     padding: 0 3px;
     color: var(--white);
     font-size: x-small;
-    background-color: rgb(3, 46, 35);
+    background-color: rgb(7, 129, 99);
     border-left: 2px solid var(--green);
     border-right: 2px solid var(--green);
     -o-transition:0.3s ease all; 
@@ -1257,14 +1258,15 @@ label {
     }
 }
 
-.contact__form__input--textarea:focus + label {
+.contact__form__input--textarea:focus + label,
+.contact__form__input--textarea:valid + label {
     top:5%;
     left: 50%;
     margin-left: -15px;
     padding: 0 3px;
     color: var(--white);
     font-size: x-small;
-    background-color: rgb(3, 46, 35);
+    background-color: rgb(7, 129, 99);
     border-left: 1px solid var(--green);
     border-right: 1px solid var(--green);
     transition: 0.3;
