@@ -382,12 +382,20 @@ body {
 
 .home__animation {
     font-size: larger;
-    -webkit-animation: blink 1.2s ease-in-out infinite alternate;
-    animation: blink 1.2s ease-in-out infinite alternate;
-    opacity: 1;
+    color: rgba(12, 215, 174, 0.4);
+    -webkit-animation: blink 1.2s ease-in-ou infinite;
+    -o-animation: blink 1.5s ease-in-out infinite;
+    animation: blink 1.5s ease-in-out infinite;
+    
 } 
 
 @keyframes blink {
+    50% {
+        color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
     50% {
         opacity: 0;
     }
@@ -1268,16 +1276,16 @@ border: 2px solid var(--green);
 label {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     -webkit-transform:translateY(-50%);
-    -moz-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     left: 15px;
     font-size: 0.9rem;
     color:#2b6154;
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
+    -o-transition:0.2s ease all; 
     -webkit-transition:0.2s ease all;
-    pointer-events: none;
+    transition:0.2s ease all; 
 }
 
 @media only screen and (max-width: 812px) {
@@ -1290,8 +1298,7 @@ label {
        top: 33%;
 }}
 
-.contact__form__input:focus + label,
-.contact__form__input:not(:placeholder-shown) + label {
+.contact__form__input:focus+label {
     top:10%;
     left: 50%;
     margin-left: -15px;
@@ -1301,20 +1308,20 @@ label {
     background-color: rgb(3, 46, 35);
     border-left: 2px solid var(--green);
     border-right: 2px solid var(--green);
-    transition: 0.3;
+    -o-transition:0.3s ease all; 
+    -webkit-transition:0.3s ease all;
+    transition: 0.3s;
 }
 
 @media only screen and (max-width: 812px) {
-    .contact__form__input:focus + label,
-    .contact__form__input:not(:placeholder-shown) + label {
+    .contact__form__input:focus + label {
        top: 0%;
     }
 }
 
 
 
-.contact__form__input--textarea:focus + label, 
-.contact__form__input--textarea:not(:placeholder-shown) + label {
+.contact__form__input--textarea:focus + label {
     top:5%;
     left: 50%;
     margin-left: -15px;
@@ -1329,8 +1336,7 @@ label {
 }
 
 @media only screen and (max-width: 812px) {
-    .contact__form__input--textarea:focus + label,
-    .contact__form__input--textarea:not(:placeholder-shown) + label {
+    .contact__form__input--textarea:focus + label {
        top: 0%;
     }
 }
