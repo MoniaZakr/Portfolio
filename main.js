@@ -78,7 +78,7 @@ function homeSectionMedia(x) {
     if (x.matches) {
         homeSection.style.display = "block";
         homeSection.style.minHeight = "100%";
-        homeSection.style.width = "100%";
+        homeSection.style.minWidth = "100%";
         homeSection.style.borderRadius = "0";
         menu.style.display = "none"; 
     }
@@ -89,7 +89,7 @@ function aboutSectionMedia(x) {
     if (x.matches) {
         aboutSection.style.display = "block";
         aboutSection.style.minHeight = "100%";
-        aboutSection.style.width = "100%";
+        aboutSection.style.minWidth = "100%";
         aboutSection.style.borderRadius = "0";
         menu.style.display = "none"
     }
@@ -99,7 +99,7 @@ function educationSectionMedia(x) {
     if (x.matches) {
         educationSection.style.display = "block";
         educationSection.style.minHeight = "100%";
-        educationSection.style.width = "100%";
+        educationSection.style.minWidth = "100%";
         educationSection.style.borderRadius = "0";
         menu.style.display = "none"
     }
@@ -109,7 +109,7 @@ function skillsSectionMedia(x) {
     if (x.matches) {
         skillsSection.style.display = "block";
         skillsSection.style.minHeight = "100%";
-        skillsSection.style.width = "100%";
+        skillsSection.style.minWidth = "100%";
         skillsSection.style.borderRadius = "0";
         menu.style.display = "none"
     }
@@ -119,7 +119,7 @@ function projectsSectionMedia(x) {
     if (x.matches) {
         projectsSection.style.display = "block";
         projectsSection.style.minHeight = "100%";
-        projectsSection.style.width = "100%";
+        projectsSection.style.minHidth = "100%";
         projectsSection.style.borderRadius = "0";
         menu.style.display = "none"
     }
@@ -128,8 +128,8 @@ function projectsSectionMedia(x) {
 function contactSectionMedia(x) {
     if (x.matches) {
         contactSection.style.display = "block";
-        contactSection.style.monHeight = "100%";
-        contactSection.style.width = "100%";
+        contactSection.style.minHeight = "100%";
+        contactSection.style.minWidth = "100%";
         contactSection.style.borderRadius = "0";
         menu.style.display = "none"
     }
