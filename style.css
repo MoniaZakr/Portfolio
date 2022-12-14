@@ -21,6 +21,12 @@ body {
     overflow: hidden;
 }
 
+@media only screen and (max-width: 414px) {
+    body {
+        overflow: auto;
+    }
+}
+
 .menu {
     display: grid;
     grid-template-rows:28vh 25vh auto;
