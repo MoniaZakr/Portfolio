@@ -268,9 +268,9 @@ body {
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 414px) {
     .home__header--name {
-      margin: 120px auto;
+      margin: 100px auto;
     }
 }
 
@@ -320,7 +320,7 @@ body {
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
-	background-clip: text;
+	-webkit-background-clip: text;
 }
 
 .about {
@@ -489,7 +489,7 @@ strong {
 	background-size: cover;
     text-transform: uppercase; 
 	color: transparent;
-	background-clip: text;
+	-webkit-background-clip: text;
 }
 
 @media only screen and (max-width: 812px) {
@@ -512,7 +512,7 @@ strong {
     font-weight: bolder;
     background: linear-gradient(90deg, var(--green), var(--white));
     color: transparent;
-    background-clip: text; 
+    -webkit-background-clip: text; 
     background-color: #1b1b1b;
 }
 
@@ -619,7 +619,7 @@ strong {
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
-	background-clip: text;
+	-webkit-background-clip: text;
 }
 
 @media only screen and (max-width: 414px) {
@@ -635,7 +635,7 @@ strong {
     list-style: square;
     background: linear-gradient(90deg, var(--green), var(--white));
     color: transparent;
-    background-clip: text; 
+    -webkit-background-clip: text; 
 }
 
 
@@ -767,7 +767,7 @@ strong {
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
-	background-clip: text;
+	-webkit-background-clip: text;
 }
 
 @media only screen and (max-width: 812px) {
@@ -975,7 +975,7 @@ strong {
     text-align: center;
     text-transform: uppercase; 
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-    background-clip: text;
+    -webkit-background-clip: text;
 	background-size: cover;
 	color: transparent;	
 }
@@ -999,7 +999,7 @@ strong {
     width: 100%;
     font-size: x-small;
     background: linear-gradient(90deg, var(--green), var(--white));
-    background-clip: text; 
+    -webkit-background-clip: text; 
 }
 
 @media only screen and (max-width: 812px) {
@@ -1060,7 +1060,7 @@ strong {
     margin: 25px;
     background: linear-gradient(90deg, var(--green), var(--white));
     color: transparent;
-    background-clip: text; 
+    -webkit-background-clip: text; 
 }
 
 .contact__form__input {
