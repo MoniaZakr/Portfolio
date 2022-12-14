@@ -20,6 +20,11 @@ body {
     color: var(--white);
     overflow: hidden;
 }
+@media only screen and (max-width: 700px) {
+    body {
+        overflow: hidden;
+    }
+}
 
 @media only screen and (max-width: 414px) {
     body {
@@ -151,21 +156,14 @@ body {
     text-decoration: none;
 }
 
- /* @media only screen and (max-width: 1362px) {
+@media only screen and (max-width: 800px) {
     .menu__cv {
-      margin-top: 20px;
-      font-size: 1.2rem;
-    }
-}  */
-
- @media only screen and (max-width: 810px) {
-    .menu__cv {
-        height: 30%;
         font-size: 150%;
         letter-spacing: 1.2px; 
     } 
-} 
- @media only screen and (max-width: 414px) {
+}
+ 
+@media only screen and (max-width: 414px) {
     .menu__cv {
         font-size: 100%;
        
@@ -177,7 +175,6 @@ body {
     position: absolute;
     top: calc(100% - 80%);
     right: calc(100% - 82%);
-    /* right: 61px; */
     font-size: large;
     color: var(--green);
     animation: rightArrow 0.9s infinite;
