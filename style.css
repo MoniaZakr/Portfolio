@@ -137,135 +137,55 @@ body {
     -moz-appearance: button;
     appearance: button;
     width: 45%;
-    height: 60px;
+    height: 50%;
     border: 2px solid var(--white);
-    font-size: 1rem;
-    padding: 20px 5px;
+    font-size: 100%;
+    padding: 10% 0;
     margin: auto;
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1362px) {
+ /* @media only screen and (max-width: 1362px) {
     .menu__cv {
       margin-top: 20px;
-      font-size: 0.8rem;
+      font-size: 1.2rem;
     }
-}
+}  */
 
-@media only screen and (max-width: 812px) {
+ @media only screen and (max-width: 810px) {
     .menu__cv {
-        height: 70px;
-        line-height: 35px;
-        font-size: 1.4rem;
-        letter-spacing: 1.2px;
-    }
-}
-
-  @media only screen and (max-width: 414px) {
+        height: 30%;
+        font-size: 150%;
+        letter-spacing: 1.2px; 
+    } 
+} 
+ @media only screen and (max-width: 414px) {
     .menu__cv {
-        font-size: inherit;
-        height: 65px;
-        letter-spacing: 0;
-        line-height: 32.5px;
+        font-size: 100%;
+       
     }
-}
+}  
 
-.menu__cv:hover ~ .fa-regular {
-    display: none;
-}
-
+/* arrow on the right side */
 .fas {
     position: absolute;
-    top: 15%;
-    right: 61px;
+    top: calc(100% - 80%);
+    right: calc(100% - 82%);
+    /* right: 61px; */
     font-size: large;
     color: var(--green);
     animation: rightArrow 0.9s infinite;
 }
-
-@media only screen and (max-width: 1362px) {
-    .fas {
-       top: 30%;
-       right: 42px; 
-    }
-} 
-
-@media only screen and (max-width: 812px) {
-    .fas {
-       top: 20%;
-       right: 186px; 
-    }
-} 
-
-@media only screen and (max-width: 736px) {
-    .fas {
-       top: 55%;
-       right: 170px; 
-    }
-} 
-
-@media only screen and (max-width: 414px) {
-    .fas {
-        top: 30%;
-        right: 79px;
-    }
+.menu__cv:hover ~ .fa-regular {
+    display: none;
 }
-
-@media only screen and (max-width: 375px) {
-    .fas {
-        top: 30%;
-        right: 72px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .fas {
-        top: 27%;
-        right: 69px;
-    }
-}
-
 
 .fa-arrow-right-long {
     position: absolute;
-    top: 15%;
-    right: 77%;
+    top: calc(100% - 80%);
+    right: calc(100% - 23%);
     font-size: large;
     animation: leftArrow 0.9s infinite;
-}
-
-@media only screen and (max-width: 1362px) {
-    .fa-arrow-right-long {
-       top: 30%;
-    }
-}
-
-@media only screen and (max-width: 812px) {
-    .fa-arrow-right-long {
-       top: 20%;
-       right: 75%
-    }
-}
-
-@media only screen and (max-width: 736px) {
-    .fa-arrow-right-long {
-       top: 55%;
-       right: 75%
-    }
-}
-
-@media only screen and (max-width: 414px) {
-    .fa-arrow-right-long {
-        top: 30%;
-        right: 77%;
-    }
-}
-
-@media only screen and (max-width: 369px) {
-    .fa-arrow-right-long {
-        top: 27%;
-        right: 76%;
-    }
 }
 
 .menu__cv:hover + .fa-arrow-right-long {
@@ -400,7 +320,7 @@ body {
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
-	-webkit-background-clip: text;
+	background-clip: text;
 }
 
 .about {
@@ -569,7 +489,7 @@ strong {
 	background-size: cover;
     text-transform: uppercase; 
 	color: transparent;
-	-webkit-background-clip: text;
+	background-clip: text;
 }
 
 @media only screen and (max-width: 812px) {
@@ -592,7 +512,7 @@ strong {
     font-weight: bolder;
     background: linear-gradient(90deg, var(--green), var(--white));
     color: transparent;
-    -webkit-background-clip: text; 
+    background-clip: text; 
     background-color: #1b1b1b;
 }
 
@@ -699,7 +619,7 @@ strong {
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
-	-webkit-background-clip: text;
+	background-clip: text;
 }
 
 @media only screen and (max-width: 414px) {
@@ -715,7 +635,7 @@ strong {
     list-style: square;
     background: linear-gradient(90deg, var(--green), var(--white));
     color: transparent;
-    -webkit-background-clip: text; 
+    background-clip: text; 
 }
 
 
@@ -847,7 +767,7 @@ strong {
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
-	-webkit-background-clip: text;
+	background-clip: text;
 }
 
 @media only screen and (max-width: 812px) {
@@ -992,7 +912,7 @@ strong {
 .popup___description {
     background: linear-gradient(90deg, var(--green), var(--white));
     color: transparent;
-    -webkit-background-clip: text; 
+    background-clip: text; 
 }
 
 .popup__info {
@@ -1055,7 +975,7 @@ strong {
     text-align: center;
     text-transform: uppercase; 
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-    -webkit-background-clip: text;
+    background-clip: text;
 	background-size: cover;
 	color: transparent;	
 }
@@ -1079,7 +999,7 @@ strong {
     width: 100%;
     font-size: x-small;
     background: linear-gradient(90deg, var(--green), var(--white));
-    -webkit-background-clip: text; 
+    background-clip: text; 
 }
 
 @media only screen and (max-width: 812px) {
@@ -1140,7 +1060,7 @@ strong {
     margin: 25px;
     background: linear-gradient(90deg, var(--green), var(--white));
     color: transparent;
-    -webkit-background-clip: text; 
+    background-clip: text; 
 }
 
 .contact__form__input {
