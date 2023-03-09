@@ -752,6 +752,7 @@ strong {
     justify-content: space-evenly;
     height: 80vh;
     width: 50%;
+    overflow-y: hidden;
     margin: auto;
     border-radius: 5%;
     background: rgba(0, 0, 0, 0.2);
@@ -762,8 +763,10 @@ strong {
 }
 
 .projects__header {
+    /* position: fixed; */
     width: 100%;
-    margin: 35px;
+    height: 10%;
+    margin: 25px;
     letter-spacing: 0.2rem;
     text-align: center;
     text-transform: uppercase; 
@@ -783,6 +786,14 @@ strong {
     .projects__header{
         margin: 25px auto 45px auto;
     }
+}
+
+.project__myProject {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60%;
+    overflow-y: scroll;
 }
 
 .projects__wrapper {
@@ -820,6 +831,7 @@ strong {
 .projects__img {
     height: 100%;
     width: 100%;
+    position: relative;
     border: 1px solid var(--green);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -867,7 +879,8 @@ strong {
 .projects__popup {
     display: none;
     position: absolute;
-    bottom: -105%;
+    top: 70%;
+    left: 0;
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.75);
@@ -875,7 +888,7 @@ strong {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding: 10px;
-    font-size: small;
+    font-size: smaller;
     z-index: 6;
 }
 
@@ -934,9 +947,14 @@ strong {
 }
 
 .social__media--projects {
-    align-self: flex-end;
+    /* position: fixed;
+    z-index: 20; */
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    /* align-self: flex-end; */
     font-size: larger;
-    padding: 60px;
+    /* padding: 60px; */
 }
 
 @media only screen and (max-width: 812px) {
