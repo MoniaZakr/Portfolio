@@ -581,7 +581,6 @@ strong {
     }
 }
 
-
 @media only screen and (max-width: 414px) {
     .education__picture {
         height: 50%;
@@ -626,16 +625,11 @@ strong {
 	-webkit-background-clip: text;
 }
 
-@media only screen and (max-width: 414px) {
-    .skills__header {
-      margin: 25px auto;
-    }
-}
-
 .skills__wrapper {
     width: 40%;
+    margin-bottom: 5px;
     padding: 50px;
-    font-size: 1.3rem;
+    font-size: 110%;
     list-style: square;
     background: linear-gradient(90deg, var(--green), var(--white));
     color: transparent;
@@ -647,18 +641,10 @@ strong {
     .skills__wrapper {
       letter-spacing: 3px;
       width: 100%;
+      height: 40%;
       text-align: center;
     }
 }
-
-@media only screen and (max-width: 414px) {
-    .skills__wrapper {
-      width: 100%;
-      padding: 10px;
-      text-align: center;
-    }
-}
-
 .skill__text {
     margin: 12px;
 }
@@ -666,7 +652,7 @@ strong {
 .skills__icon {
     display: grid;
     width: 50%;
-    height: 60%;
+    height: 70%;
     border-radius: 50%;
     margin-top: 50px;
     grid-template-columns: 1f 1f 1f;
@@ -682,25 +668,13 @@ strong {
 @media only screen and (max-width: 812px) {
     .skills__icon {
         width: 90%;
+        height: 40%;
         text-align: center;
-        height: 55%;
+    }
+    .skill__text {
+        text-align: left;
     }
 }
-
-@media only screen and (max-width: 414px) {
-    .skills__icon {
-      width: 100%;
-      margin-top: 40px;
-      margin-bottom: 10px;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .skills__icon {
-      height: 45%;
-    }
-}
-
 
 .skills__img {
     align-self: center;

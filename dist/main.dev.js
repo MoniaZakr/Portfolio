@@ -80,6 +80,7 @@ function homeSectionMedia(x) {
     homeSection.style.minHeight = "100%";
     homeSection.style.width = "100%";
     homeSection.style.borderRadius = "0";
+    homeSection.style.background = "#247364";
     menu.style.display = "none";
   }
 }
@@ -91,6 +92,7 @@ function aboutSectionMedia(x) {
     aboutSection.style.minHeight = "120%";
     aboutSection.style.width = "100%";
     aboutSection.style.borderRadius = "0";
+    aboutSection.style.background = "#247364";
     menu.style.display = "none";
   }
 }
@@ -102,17 +104,18 @@ function educationSectionMedia(x) {
     educationSection.style.minHeight = "130%";
     educationSection.style.width = "100%";
     educationSection.style.borderRadius = "0";
+    educationSection.style.background = "#247364";
     menu.style.display = "none";
   }
 }
 
 function skillsSectionMedia(x) {
   if (x.matches) {
-    skillsSection.style.display = "block";
-    skillsSection.style.maxHeight = "150%";
-    skillsSection.style.minHeight = "120%";
+    skillsSection.style.display = "flex";
+    skillsSection.style.minHeight = "150vh";
     skillsSection.style.width = "100%";
     skillsSection.style.borderRadius = "0";
+    skillsSection.style.background = "#247364";
     menu.style.display = "none";
   }
 }
@@ -123,6 +126,7 @@ function projectsSectionMedia(x) {
     projectsSection.style.minHeight = "140%";
     projectsSection.style.width = "100%";
     projectsSection.style.borderRadius = "0";
+    projectsSection.style.background = "#247364";
     menu.style.display = "none";
   }
 }
@@ -134,6 +138,7 @@ function contactSectionMedia(x) {
     contactSection.style.minHeight = "150%";
     contactSection.style.width = "100%";
     contactSection.style.borderRadius = "0";
+    contactSection.style.background = "#247364";
     menu.style.display = "none";
   }
 }
