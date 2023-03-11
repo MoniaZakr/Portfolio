@@ -122,8 +122,8 @@ function skillsSectionMedia(x) {
 
 function projectsSectionMedia(x) {
   if (x.matches) {
-    projectsSection.style.display = "block";
-    projectsSection.style.minHeight = "140%";
+    projectsSection.style.display = "flex";
+    projectsSection.style.minHeight = "100%";
     projectsSection.style.width = "100%";
     projectsSection.style.borderRadius = "0";
     projectsSection.style.background = "#247364";

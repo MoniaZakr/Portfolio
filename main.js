@@ -84,7 +84,6 @@ function homeSectionMedia(x) {
     }
 }
 
-
 function aboutSectionMedia(x) {
     if (x.matches) {
         aboutSection.style.display = "block";
@@ -122,8 +121,8 @@ function skillsSectionMedia(x) {
 
 function projectsSectionMedia(x) {
     if (x.matches) {
-        projectsSection.style.display = "block";
-        projectsSection.style.minHeight = "140%";
+        projectsSection.style.display = "flex";
+        projectsSection.style.minHeight = "100%";
         projectsSection.style.width = "100%";
         projectsSection.style.borderRadius = "0";
         projectsSection.style.background = "#247364";
@@ -171,7 +170,6 @@ function popupClose(index) {
 }
 
 function closeWindow() {
-   
     homeSection.style.display = "none";
     aboutSection.style.display = "none";
     educationSection.style.display = "none";
@@ -188,5 +186,4 @@ closeMark.forEach(element => element.addEventListener("click", closeWindow));
 
 formInput.forEach((input, value) => {
     input.value = "";
-
 })
