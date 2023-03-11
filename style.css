@@ -669,7 +669,7 @@ strong {
     border-radius: 50%;
     margin-top: 50px;
     grid-template-columns: 1f 1f 1f;
-    grid-template-rows: 1f 1f 1f 1f;
+    grid-template-rows: 1f 1f 1f 1f 1f;
 }
 
 @media only screen and (max-width: 1362px) {
@@ -737,12 +737,17 @@ strong {
 }
 
 .skills__img--responsive {
-    grid-area:4/2/5/3 ;
+    grid-area:5/2/6/3 ;
 }
 
-.skills__img--photoshop {
-    grid-area:2/2/4/3;
-    
+.skills__img--figma {
+    grid-area:3/2/4/3;
+}
+.skills__img--react {
+    grid-area:4/1/5/2;
+}
+.skills__img--typescript {
+    grid-area:4/3/5/4;
 }
 
 .projects {
