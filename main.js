@@ -12,7 +12,13 @@ const menu = document.querySelector(".menu");
 const closeMark = document.querySelectorAll(".menu__xmark");
 const formInput = document.querySelectorAll(".contact__form__input");
 
-const x = window.matchMedia("(max-width: 812px)");
+const x = window.matchMedia("(max-width: 1012px)");
+
+window.addEventListener("load", function() {
+    const splashScreen = document.getElementById("load");
+    splashScreen.style.display = "none";
+});
+
 
 
 buttons.forEach(button => button.addEventListener("click", switched));
