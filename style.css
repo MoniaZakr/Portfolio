@@ -58,7 +58,7 @@ body {
     box-shadow: 0 1rem 2rem rgba(236, 230, 230, 0.3);
 }
 
-@media only screen and (max-width: 1012px) {
+@media only screen and (max-width: 812px) {
     .menu {
         height: 100%;
         width: 100%;
@@ -175,7 +175,7 @@ body {
     } 
 }
  
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 514px) {
     .menu__cv {
         font-size: 100%;
        
@@ -234,12 +234,6 @@ body {
     box-shadow: 0 1rem 2rem rgba(236, 230, 230, 0.3);
 }
 
-@media only screen and (max-width: 812px) {
-    .home {
-      display: none;
-    }
-}
-
 .menu__xmark {
     display: none;
     position: absolute;
@@ -252,6 +246,9 @@ body {
 
 
 @media only screen and (max-width: 812px) {
+    .home {
+        display: none;
+    }
     .menu__xmark {
       display: block;
     }

@@ -20,7 +20,6 @@ window.addEventListener("load", function() {
 });
 
 
-
 buttons.forEach(button => button.addEventListener("click", switched));
 
 function switched(e) {
@@ -81,8 +80,8 @@ function switched(e) {
 function homeSectionMedia(x) {
     if (x.matches) {
         homeSection.style.display = "block";
-        homeSection.style.maxHeight = "150%";
-        homeSection.style.minHeight = "100%";
+        // homeSection.style.maxHeight = "150%";
+        homeSection.style.minHeight = "100vh";
         homeSection.style.width = "100%";
         homeSection.style.borderRadius = "0";
         homeSection.style.background = "#247364";
@@ -93,7 +92,7 @@ function homeSectionMedia(x) {
 function aboutSectionMedia(x) {
     if (x.matches) {
         aboutSection.style.display = "block";
-        aboutSection.style.maxHeight = "150%";
+        aboutSection.style.maxHeight = "140%";
         aboutSection.style.minHeight = "120%";
         aboutSection.style.width = "100%";
         aboutSection.style.borderRadius = "0";
