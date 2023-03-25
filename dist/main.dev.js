@@ -79,9 +79,9 @@ function switched(e) {
 
 function homeSectionMedia(x) {
   if (x.matches) {
-    homeSection.style.display = "block"; // homeSection.style.maxHeight = "150%";
-
-    homeSection.style.minHeight = "100vh";
+    homeSection.style.display = "block";
+    homeSection.style.maxHeight = "110%";
+    homeSection.style.minHeight = "100%";
     homeSection.style.width = "100%";
     homeSection.style.borderRadius = "0";
     homeSection.style.background = "#247364";
