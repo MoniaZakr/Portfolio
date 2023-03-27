@@ -80,7 +80,7 @@ function switched(e) {
 function homeSectionMedia(x) {
     if (x.matches) {
         homeSection.style.display = "flex";
-        homeSection.style.maxHeight = "110%";
+        homeSection.style.maxHeight = "100%";
         homeSection.style.minHeight = "100%";
         homeSection.style.width = "100%";
         homeSection.style.borderRadius = "0";
@@ -92,7 +92,7 @@ function homeSectionMedia(x) {
 function aboutSectionMedia(x) {
     if (x.matches) {
         aboutSection.style.display = "block";
-        aboutSection.style.maxHeight = "140%";
+        aboutSection.style.maxHeight = "160%";
         aboutSection.style.minHeight = "120%";
         aboutSection.style.width = "100%";
         aboutSection.style.borderRadius = "0";
