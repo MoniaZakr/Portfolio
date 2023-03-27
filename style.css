@@ -382,7 +382,7 @@ body {
 @media only screen and (max-width: 414px) {
     .about__header {
         font-size: smaller;
-        margin: 45px auto;
+        margin: 250px auto  45px;
     }
 }
 
@@ -475,6 +475,13 @@ strong {
     }
 }
 
+@media only screen and (max-width: 414px) {
+    .education {
+        flex-direction: column;
+        font-size: inherit;
+    }
+}
+
 .education__section--school {
     position: relative;
 }
@@ -489,9 +496,17 @@ strong {
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
     .education__section {
-        margin: 45px auto;
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .education__section {
+        width: 100%;
+        margin: 30px auto;
     }
 }
 
@@ -513,7 +528,7 @@ strong {
 
 @media only screen and (max-width: 414px) {
     .education__header {
-        margin: 30px;
+        margin: 20px;
         font-size: large;
     }
 }
@@ -541,15 +556,16 @@ strong {
     .education__school, .education__course {
         text-align: start;
         margin: 25px 35px;
-        font-size: large;
         letter-spacing: 1px;
+    }
+    .education__section--course {
+        margin-top:80px ;
     }
 }
 
 @media only screen and (max-width: 375px) {
     .education__school, .education__course {
         margin: 20px 35px;
-        font-size: 1rem;
     }
 }
 
@@ -567,8 +583,10 @@ strong {
     .education__course::before, .education__school::before {
         left: -10px;
     }
+    .education__section {
+        font-size: smaller ;
+    }
 }
-
 
 .education__degree, .education__organizer {
     font-weight: normal;
@@ -591,17 +609,17 @@ strong {
 
 @media only screen and (max-width: 414px) {
     .education__picture {
-        height: 50%;
-        bottom: -600px;
-        left: 170px;
+        height: 35%;
+        bottom: -100px;
+        left: 40%;
     }
 }
 
 @media only screen and (max-width: 360px) {
     .education__picture {
-        height: 70%;
-        bottom: -550px;
-        left: 160px;
+        height: 35%;
+        bottom: -100px;
+        left: 40%;
     }
 }
 

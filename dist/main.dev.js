@@ -105,7 +105,7 @@ function educationSectionMedia(x) {
   if (x.matches) {
     educationSection.style.display = "flex";
     educationSection.style.maxHeight = "150%";
-    educationSection.style.minHeight = "130%";
+    educationSection.style.minHeight = "100%";
     educationSection.style.width = "100%";
     educationSection.style.borderRadius = "0";
     educationSection.style.background = "#247364";
