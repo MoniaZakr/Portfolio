@@ -27,7 +27,7 @@ function switched(e) {
   console.log(btn);
 
   if (btn.classList.contains("menu__home")) {
-    homeSection.style.display = "grid";
+    homeSection.style.display = "flex";
     aboutSection.style.display = "none";
     educationSection.style.display = "none";
     skillsSection.style.display = "none";
@@ -79,7 +79,7 @@ function switched(e) {
 
 function homeSectionMedia(x) {
   if (x.matches) {
-    homeSection.style.display = "block";
+    homeSection.style.display = "flex";
     homeSection.style.maxHeight = "110%";
     homeSection.style.minHeight = "100%";
     homeSection.style.width = "100%";
@@ -103,7 +103,7 @@ function aboutSectionMedia(x) {
 
 function educationSectionMedia(x) {
   if (x.matches) {
-    educationSection.style.display = "block";
+    educationSection.style.display = "flex";
     educationSection.style.maxHeight = "150%";
     educationSection.style.minHeight = "130%";
     educationSection.style.width = "100%";
@@ -137,7 +137,7 @@ function projectsSectionMedia(x) {
 
 function contactSectionMedia(x) {
   if (x.matches) {
-    contactSection.style.display = "block";
+    contactSection.style.display = "flex";
     contactSection.style.maxHeight = "150%";
     contactSection.style.minHeight = "150%";
     contactSection.style.width = "100%";
